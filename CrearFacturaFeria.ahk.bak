@@ -150,7 +150,6 @@ Imprimir_Factura()
 	{
 		CuentaImpresion := 2
 		Run, C:\Facturacion\Imprime Tiquetes.exe
-		;~ Cambiar segun la version de Imprime Tiquetes..... IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!
 		WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.141b42a_r7_ad1 ahk_exe Imprime Tiquetes.exe
 		;~ Impresion doble
 		Loop, % ClienteArray.MaxIndex()
