@@ -178,7 +178,10 @@ Imprimir_Factura()
 		Sleep, 50
 		;~ Selecciona la pestaña de factura
 		MouseClick, left, 85, 15
-		MouseMove, 455, 399
+		;~ MouseMove, 455, 399
+		;~ Ultima Posicion del mouse al finalizar la factura,
+		;~ Queda en la segunda ventana en la pesta;a de tictick
+		MouseMove, 3348, 354
 		ExitApp
 	}
 	else

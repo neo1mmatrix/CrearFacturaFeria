@@ -150,6 +150,7 @@ Imprimir_Factura()
 	{
 		CuentaImpresion := 2
 		Run, C:\Facturacion\Imprime Tiquetes.exe
+		;~ Cambiar segun la version de Imprime Tiquetes..... IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!
 		WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.141b42a_r7_ad1 ahk_exe Imprime Tiquetes.exe
 		;~ Impresion doble
 		Loop, % ClienteArray.MaxIndex()
@@ -177,7 +178,10 @@ Imprimir_Factura()
 		Sleep, 50
 		;~ Selecciona la pestaña de factura
 		MouseClick, left, 85, 15
-		MouseMove, 455, 399
+		;~ MouseMove, 455, 399
+		;~ Ultima Posicion del mouse al finalizar la factura,
+		;~ Queda en la segunda ventana en la pesta;a de tictick
+		MouseMove, 3348, 354
 		ExitApp
 	}
 	else
