@@ -74,10 +74,7 @@ Boton_Condicion_Venta()
 	MouseClick, left, 1734, 971
 	Sleep, 1000
 	;~ Seleccione una opcion
-	MouseClick, left, 1057, 433
-	Sleep, 500
-	;~ Efectivo
-	MouseClick, left, 1015, 499
+	MouseClick, left, 1170, 438
 	Sleep, 200
 
 	;~ Añadir monto pendiente
@@ -151,7 +148,7 @@ Imprimir_Factura()
 		CuentaImpresion := 2
 		Run, C:\Facturacion\Imprime Tiquetes.exe
 		;~ Cambiar segun la version de Imprime Tiquetes..... IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!
-		WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.141b42a_r7_ad1 ahk_exe Imprime Tiquetes.exe
+		WinWaitActive, ahk_exe Imprime Tiquetes.exe
 		;~ Impresion doble
 		Loop, % ClienteArray.MaxIndex()
 		{
